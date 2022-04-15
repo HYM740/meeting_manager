@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.app {
+    width: 100vw;
+    height: 100vh;
+    background-color: #001c40;
+    color: #FFF;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 24px;
+}
+
+.app .login-window {
+    width: 400px;
+    border: 2px solid #d0d7de;
+    background-color: #002451;
+    border-radius: 8px;
+    padding: 4em 2em;
+}
+
+.app .login-window .logo {
+    text-align: center;
+    margin-bottom: 1.5em;
+}
+
+.app .login-window .logo-text {
+    font-size: 36px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.app .login-window form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.app .login-window form label {
+    line-height: 1.5em;
+}
+
+.app .login-window form input {
+    border-radius: 8px;
+    padding: .125em .5em;
+    text-align: center;
+}
+
+.app .login-window form input[type="text"] {
+    font-size: 1em;
+}
+
+.app .login-window form input[type="password"] {
+    font-size: 1em;
+}
+
+.app .login-window form .button-group {
+    margin-top: 1em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
+}
+
+.app .login-window form .button-group input {
+    font-size: 1em;
+}
+
+.app .login-window .msg {
+    margin-top: .25em;
+    text-align: center;
+    color: #ff9da4;
+    font-size: 20px;
+}
+
+.app .login-window .no-account {
+    margin-top: .5em;
+    text-align: center;
+    color: #64a3f5;
+    font-size: 20px;
+}
+
+.app .login-window .no-account a {
+    text-decoration: underline;
+    color: #64a3f5;
+    font-weight: bold;
+}
+
+.app .login-window .no-account a:visited {
+    color: #64a3f5;
+}
+/*# sourceMappingURL=style.css.map */
