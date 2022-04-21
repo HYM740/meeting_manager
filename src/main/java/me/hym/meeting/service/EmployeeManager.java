@@ -1,12 +1,13 @@
 package me.hym.meeting.service;
 
+import me.hym.meeting.dao.EmployeeDao;
 import me.hym.meeting.dao.impl.EmployeeDaoImpl;
 import me.hym.meeting.entity.Employee;
 
 import java.util.List;
 
 public class EmployeeManager {
-    static EmployeeDaoImpl ed = new EmployeeDaoImpl();
+    private static EmployeeDao ed = new EmployeeDaoImpl();
     public static boolean createEmployee(Employee employee){
         return ed.insert(employee)==1;
     }

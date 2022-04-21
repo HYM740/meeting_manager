@@ -5,6 +5,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.math.BigDecimal;
 import java.sql.*;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.Properties;
 
@@ -38,7 +39,9 @@ public class DBUtil {
     }
 
     public static Connection getConnection() throws SQLException {
-        return DriverManager.getConnection(datasource_url, username, password);
+        Connection c = DriverManager.getConnection(datasource_url, username, password);
+        c.setAutoCommit(false);
+        return c;
     }
 
     /**
@@ -97,6 +100,12 @@ public class DBUtil {
                         BigDecimal bd = (BigDecimal) rs.getObject(i);
                         int value = bd.intValue();
                         f.set(t,value);
+                        continue;
+                    }
+                    //对于Date类型的特殊处理
+                    if(rs.getObject(i) instanceof Date){
+                        Date d = new Date(rs.getTimestamp(i).getTime());
+                        f.set(t,d);
                         continue;
                     }
                     f.set(t,rs.getObject(i));

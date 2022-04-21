@@ -13,7 +13,7 @@ import java.io.IOException;
  * 对未登录的会话访问系统予以拦截
  * @author bataneko
  */
-@WebFilter(urlPatterns = "/manager/*")
+//@WebFilter(urlPatterns = "/manager/*")
 public class AuthFilter extends HttpFilter {
 
     @Override

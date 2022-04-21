@@ -9,7 +9,7 @@ CREATE TABLE meeting_emp(
                             photo_img varchar2(100),
                             role number(2) not null,--0经理 1员工
                             did number(4),
-                            e_status number(2)--0在职 1离职
+                            e_status number(2)--0在职 1离职 2待定
 );
 CREATE SEQUENCE meeting_emp_eid_seq
     START WITH 1

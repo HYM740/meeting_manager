@@ -5,12 +5,12 @@ public class Department {
     String dname;
     int manager_id;
     int d_status;
-    int d_desc;
+    String d_desc;
 
     public Department() {
     }
 
-    public Department(int did, String dname, int manager_id, int d_status, int d_desc) {
+    public Department(int did, String dname, int manager_id, int d_status, String d_desc) {
         this.did = did;
         this.dname = dname;
         this.manager_id = manager_id;
@@ -50,11 +50,11 @@ public class Department {
         this.d_status = d_status;
     }
 
-    public int getD_desc() {
+    public String getD_desc() {
         return d_desc;
     }
 
-    public void setD_desc(int d_desc) {
+    public void setD_desc(String d_desc) {
         this.d_desc = d_desc;
     }
 
@@ -65,7 +65,7 @@ public class Department {
                 ", dname='" + dname + '\'' +
                 ", manager_id=" + manager_id +
                 ", d_status=" + d_status +
-                ", d_desc=" + d_desc +
+                ", d_desc='" + d_desc + '\'' +
                 '}';
     }
 }

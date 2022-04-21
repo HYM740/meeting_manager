@@ -25,7 +25,7 @@
         </form>
         <div class="msg"><%=request.getAttribute("msg")==null?"":request.getAttribute("msg")%></div>
         <div class="no-account">
-            没有账号？点击<a href="#">这里</a>注册！
+            没有账号？点击<a href="<%=request.getContextPath()%>/register.jsp">这里</a>注册！
         </div>
     </div>
 </div>

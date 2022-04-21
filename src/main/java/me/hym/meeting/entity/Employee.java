@@ -4,9 +4,10 @@ import java.util.Date;
 
 /**
  * 员工实体类
+ *
  * @author bataneko
  */
-public class Employee {
+public class Employee{
     int eid;
     String ename;
     String password;
@@ -48,6 +49,9 @@ public class Employee {
     }
 
     public void setEname(String ename) {
+        if (ename == null) {
+            return;
+        }
         this.ename = ename;
     }
 
@@ -56,6 +60,9 @@ public class Employee {
     }
 
     public void setPassword(String password) {
+        if (password == null) {
+            return;
+        }
         this.password = password;
     }
 
@@ -64,6 +71,9 @@ public class Employee {
     }
 
     public void setHire_date(Date hire_date) {
+        if (hire_date == null) {
+            return;
+        }
         this.hire_date = hire_date;
     }
 
@@ -72,6 +82,9 @@ public class Employee {
     }
 
     public void setTelephone(String telephone) {
+        if (telephone == null) {
+            return;
+        }
         this.telephone = telephone;
     }
 
@@ -130,4 +143,5 @@ public class Employee {
                 ", estatus=" + e_status +
                 '}';
     }
+
 }

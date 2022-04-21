@@ -13,4 +13,6 @@ insert into meeting_dept values(meeting_dept_did_seq.nextval,'财务部',0,0,'�
 insert into meeting_emp values(meeting_emp_eid_seq.nextval,'bataneko','hym740',to_date('2021-04-15','yyyy-mm-dd'),
                                '12345678910',to_date('2000-06-15','yyyy-mm-dd'),'null.jpg',0,2,0);
 
+
+
 COMMIT;

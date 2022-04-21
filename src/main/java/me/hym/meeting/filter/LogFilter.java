@@ -16,10 +16,11 @@ import java.io.IOException;
 public class LogFilter extends HttpFilter {
     @Override
     protected void doFilter(HttpServletRequest req, HttpServletResponse res, FilterChain chain) throws IOException, ServletException {
+        super.doFilter(req, res, chain);
         StringBuffer sb = new StringBuffer();
         getServletContext().log("请求地址："+req.getRequestURI());
         getServletContext().log("请求方式："+req.getMethod());
-        super.doFilter(req, res, chain);
+
     }
 
 }

@@ -1,7 +1,7 @@
 package me.hym.meeting.entity;
 
 import java.util.Date;
-
+@Deprecated
 public class EmployeeDetail {
     int eid;
     String ename;
